@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <h1 class="logo">Innocent Byiringiro<span>.</span></h1>
+      <button id="themeToggle" class="btn btn-small" aria-label="Toggle theme">Mode</button>
+    </nav>
+    <div class="hero-content container">
+      <p class="eyebrow">Data/Business Intelligence Analyst</p>
+      <h2>Deriving insights from data.</h2>
+      <p class="lead">
+        I analyze data to uncover trends, improve performance, and support strategic planning.
+        Here are five projects that demonstrate dashboarding, forecasting, and analytics storytelling.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </header>
+
+  <main class="container" id="projects">
+    <section class="section-heading">
+      <h3>Featured Projects</h3>
+      <p>Explore my latest work in data analysis and visualization.</p>
+    </section>
+
+    <section class="project-grid">
+      <article class="project-card" data-project="Customer Churn Analysis">
+        <h4>Customer Churn Analysis</h4>
+        <p>Identified key churn drivers and provided retention recommendations that reduced churn risk.</p>
+        <ul>
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>Classification</li>
+        </ul>
+        <button class="btn btn-outline details-btn" onclick="window.location.href='https://github.com/inn-ctrl/Customer-Churning-Prediction'">Quick View</button>
+      </article>
+
+      <article class="project-card" data-project="Marketing Campaign ROI">
+        <h4>Customer Behavior Analysis</h4>
+        <p>Analyzed customer purchasing and behavior patterns and preferences to inform business strategies.</p>
+        <ul>
+          <li>Excel</li>
+          <li>PowerBI</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <button class="btn btn-outline details-btn" onclick="window.location.href='https://github.com/inn-ctrl/customer_behavior_analysis'">Quick View</button>
+      </article>
+
+      <article class="project-card" data-project="Supply Chain KPI Tracker">
+        <h4>Predicting Employee Attrition</h4>
+        <p>A binary classificaiton project predicting whether an employee would leave a company over a period of time.</p>
+        <ul>
+          <li>Python</li>
+          <li>Jupyter Notebooks</li>
+          <li>Kaggle dataset</li>
+        </ul>
+        <button class="btn btn-outline details-btn" onclick="window.location.href='https://github.com/inn-ctrl/Predicting-Employee-Attrition/tree/main'">Quick View</button>
+      </article>
+    </section>
+  </main>
+
+  <section class="contact container" id="contact">
+    <h3>Contact Me</h3>
+    <p>Feel free to reach out for further information or potential collaborations.</p>
+    <div class="contact-links">
+      <a class="btn" href="mailto:amina.analyst@email.com">Email Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/innocent-byiringiro18/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn" href="https://github.com/inn-ctrl" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
