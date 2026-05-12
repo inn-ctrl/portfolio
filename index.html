@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Analyst Portfolio</title>
+  <meta name="description" content="Innocent Byiringiro — Data and BI analyst portfolio: churn modeling, customer behavior analytics, and attrition prediction with Python, SQL, and Power BI.">
+  <title>Innocent Byiringiro | Data &amp; BI Analyst</title>
+  <meta property="og:title" content="Innocent Byiringiro | Data &amp; BI Analyst">
+  <meta property="og:description" content="Dashboarding, forecasting, and analytics storytelling. Featured projects in churn, customer behavior, and employee attrition.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,89 +18,143 @@
     <h1 class="logo">
       <a class="logo-link" href="#">Innocent Byiringiro<span>.</span></a>
     </h1>
-    <button id="themeToggle" type="button" class="btn btn-small" aria-label="Toggle theme">Mode</button>
+    <div class="nav-actions">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle" type="button" class="btn btn-small btn-ghost" aria-label="Toggle color theme">Theme</button>
+    </div>
   </nav>
   <header class="hero">
+    <div class="hero-deco" aria-hidden="true">
+      <span class="hero-vrail hero-vrail--left"></span>
+      <span class="hero-vrail hero-vrail--right"></span>
+      <span class="hero-hbar hero-hbar--upper"></span>
+      <span class="hero-hbar hero-hbar--mid"></span>
+      <span class="hero-hbar hero-hbar--lower"></span>
+    </div>
     <div class="hero-content container">
-      <p class="eyebrow">Data/Business Intelligence Analyst</p>
-      <h2 class="hero-title">Deriving insights from data.</h2>
-      <p class="lead">
-        I analyze data to uncover trends, improve performance, and support strategic planning.
-        Here are three projects that demonstrate dashboarding, forecasting, and analytics storytelling.
-      </p>
-      <a href="#projects" class="btn">View Projects</a>
+      <div class="hero-panel reveal reveal-rise">
+        <p class="eyebrow">Data / Business Intelligence Analyst</p>
+        <h2 class="hero-title">Deriving insights from data.</h2>
+        <p class="lead">
+          I turn raw data into clear decisions: exploratory analysis, dashboards stakeholders use, and models that highlight risk and opportunity.
+          Below are three projects spanning classification, behavioral analytics, and reporting.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View projects</a>
+          <a href="#about" class="btn btn-secondary">About &amp; skills</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section-heading" id="projects">
-      <h3>Featured Projects</h3>
-      <p>Explore my latest work in data analysis and visualization.</p>
-    </section>
+  <hr class="section-divider" aria-hidden="true" />
 
-    <section class="project-grid">
-      <article class="project-card">
-        <div class="project-card-thumb" data-initial="C" aria-hidden="true"></div>
-        <div class="project-card-inner">
-          <h4>Customer Churn Analysis</h4>
-          <p>Identified key churn drivers and provided retention recommendations that reduced churn risk.</p>
-          <ul>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>Classification</li>
+  <main>
+    <section class="about container" id="about" aria-labelledby="about-heading">
+      <div class="about-card reveal reveal-rise">
+        <h3 id="about-heading">About</h3>
+        <p class="about-lead">
+          I am Innocent Byiringiro, a data and BI analyst focused on SQL, Python, and visualization.
+          I enjoy translating messy business questions into reproducible analysis and narratives that teams can act on.
+        </p>
+        <p class="about-meta">Open to roles and collaborations in analytics, BI, and data storytelling.</p>
+        <div class="skills-block">
+          <p class="skills-label">Core skills</p>
+          <ul class="skills-list" aria-label="Core skills">
+            <li>SQL / PostgreSQL</li>
+            <li>Python · Pandas · scikit-learn</li>
+            <li>Power BI · Excel</li>
+            <li>Classification · forecasting · dashboards</li>
           </ul>
-          <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Customer-Churning-Prediction" target="_blank" rel="noopener noreferrer">
-            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            Quick View
-          </a>
         </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-card-thumb" data-initial="B" aria-hidden="true"></div>
-        <div class="project-card-inner">
-          <h4>Customer Behavior Analysis</h4>
-          <p>Analyzed customer purchasing and behavior patterns and preferences to inform business strategies.</p>
-          <ul>
-            <li>Excel</li>
-            <li>PowerBI</li>
-            <li>PostgreSQL</li>
-          </ul>
-          <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/customer_behavior_analysis" target="_blank" rel="noopener noreferrer">
-            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            Quick View
-          </a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-card-thumb" data-initial="P" aria-hidden="true"></div>
-        <div class="project-card-inner">
-          <h4>Predicting Employee Attrition</h4>
-          <p>A binary classification project predicting whether an employee would leave a company over a period of time.</p>
-          <ul>
-            <li>Python</li>
-            <li>Jupyter Notebooks</li>
-            <li>Kaggle dataset</li>
-          </ul>
-          <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Predicting-Employee-Attrition/tree/main" target="_blank" rel="noopener noreferrer">
-            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            Quick View
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <section class="contact" id="contact">
-      <h3>Contact Me</h3>
-      <p>Feel free to reach out for further information or potential collaborations.</p>
-      <div class="contact-links">
-        <a class="btn" href="mailto:innocenthope160@email.com">Email Me</a>
-        <a class="btn" href="https://www.linkedin.com/in/innocent-byiringiro18/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="btn" href="https://github.com/inn-ctrl" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </section>
+
+    <hr class="section-divider" aria-hidden="true" />
+
+    <div class="container">
+      <section class="section-heading reveal reveal-rise" id="projects">
+        <h3>Featured projects</h3>
+        <p>Each card links to the GitHub repository with code and documentation. Thumbnails are placeholders until live dashboard captures are added.</p>
+      </section>
+
+      <section class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-card-thumb project-card-thumb--churn" data-initial="01" role="img" aria-label="Project placeholder: Customer churn"></div>
+          <div class="project-card-inner">
+            <h4>Customer churn analysis</h4>
+            <p class="project-outcome"><strong>Outcome:</strong> Ranked churn drivers with a classification baseline so retention could prioritize high-risk accounts.</p>
+            <p>Problem → approach: profiled at-risk customers, compared cohorts, and framed model outputs as actionable retention levers.</p>
+            <ul>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Classification</li>
+            </ul>
+            <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Customer-Churning-Prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-thumb project-card-thumb--behavior" data-initial="02" role="img" aria-label="Project placeholder: Customer behavior"></div>
+          <div class="project-card-inner">
+            <h4>Customer behavior analysis</h4>
+            <p class="project-outcome"><strong>Outcome:</strong> Summarized purchasing and preference patterns to support segmentation and campaign planning.</p>
+            <p>Problem → approach: combined database extracts with BI-friendly views so stakeholders could explore trends without rework.</p>
+            <ul>
+              <li>Excel</li>
+              <li>Power BI</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/customer_behavior_analysis" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-thumb project-card-thumb--attrition" data-initial="03" role="img" aria-label="Project placeholder: Employee attrition"></div>
+          <div class="project-card-inner">
+            <h4>Predicting employee attrition</h4>
+            <p class="project-outcome"><strong>Outcome:</strong> Built a binary classifier on structured HR-style features to flag likely turnover for follow-up.</p>
+            <p>Problem → approach: treated attrition as a supervised learning exercise with clear train/eval splits and interpretable inputs.</p>
+            <ul>
+              <li>Python</li>
+              <li>Jupyter Notebooks</li>
+              <li>Kaggle dataset</li>
+            </ul>
+            <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Predicting-Employee-Attrition/tree/main" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+      </section>
+
+      <hr class="section-divider section-divider--spaced" aria-hidden="true" />
+
+      <section class="contact reveal reveal-rise" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-inner">
+          <div class="contact-intro">
+            <p class="contact-eyebrow">Get in touch</p>
+            <h3 id="contact-heading">Contact</h3>
+            <p class="contact-lead">For collaboration, interview opportunities, or a walkthrough of any project, reach out by email or LinkedIn.</p>
+          </div>
+          <div class="contact-links">
+            <a class="btn" href="mailto:innocenthope160@email.com">Email</a>
+            <a class="btn btn-outline btn-small" href="https://www.linkedin.com/in/innocent-byiringiro18/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-outline btn-small" href="https://github.com/inn-ctrl" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <hr class="section-divider" aria-hidden="true" />
+
+  <footer class="site-footer reveal reveal-rise">
+    <div class="container site-footer-inner">
+      <p class="footer-copy">&copy; <span id="footerYear"></span> Innocent Byiringiro. Static portfolio — theme preference is not saved.</p>
+    </div>
+  </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 

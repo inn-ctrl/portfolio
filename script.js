@@ -20,8 +20,35 @@ detailsButtons.forEach((el) => {
   });
 });
 
+document.getElementById("footerYear").textContent = String(new Date().getFullYear());
+
+function initScrollReveal() {
+  const els = document.querySelectorAll(".reveal");
+  if (!els.length) return;
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    els.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      });
+    },
+    { root: null, rootMargin: "0px 0px -10% 0px", threshold: 0.12 }
+  );
+
+  els.forEach((el) => observer.observe(el));
+}
+
+initScrollReveal();
+
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("light");
   const isLight = document.body.classList.contains("light");
-  showToast(isLight ? "Light mode active" : "Dark mode active");
+  showToast(isLight ? "Light theme on" : "Dark theme on");
 });
