@@ -12,10 +12,10 @@ function showToast(message) {
   }, 1800);
 }
 
-detailsButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const card = button.closest(".project-card");
-    const projectName = card?.dataset.project || "Project";
+detailsButtons.forEach((el) => {
+  el.addEventListener("click", () => {
+    const card = el.closest(".project-card");
+    const projectName = card?.querySelector("h4")?.textContent?.trim() || "Project";
     showToast(`Opened: ${projectName}`);
   });
 });
