@@ -6,18 +6,20 @@
   <title>Data Analyst Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="site-nav container" aria-label="Primary">
+    <h1 class="logo">
+      <a class="logo-link" href="#">Innocent Byiringiro<span>.</span></a>
+    </h1>
+    <button id="themeToggle" type="button" class="btn btn-small" aria-label="Toggle theme">Mode</button>
+  </nav>
   <header class="hero">
-    <nav class="nav container">
-      <h1 class="logo">Innocent Byiringiro<span>.</span></h1>
-      <button id="themeToggle" class="btn btn-small" aria-label="Toggle theme">Mode</button>
-    </nav>
     <div class="hero-content container">
       <p class="eyebrow">Data/Business Intelligence Analyst</p>
-      <h2>Deriving insights from data.</h2>
+      <h2 class="hero-title">Deriving insights from data.</h2>
       <p class="lead">
         I analyze data to uncover trends, improve performance, and support strategic planning.
         Here are three projects that demonstrate dashboarding, forecasting, and analytics storytelling.
@@ -34,36 +36,54 @@
 
     <section class="project-grid">
       <article class="project-card">
-        <h4>Customer Churn Analysis</h4>
-        <p>Identified key churn drivers and provided retention recommendations that reduced churn risk.</p>
-        <ul>
-          <li>Python</li>
-          <li>Pandas</li>
-          <li>Classification</li>
-        </ul>
-        <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Customer-Churning-Prediction" target="_blank" rel="noopener noreferrer">Quick View</a>
+        <div class="project-card-thumb" data-initial="C" aria-hidden="true"></div>
+        <div class="project-card-inner">
+          <h4>Customer Churn Analysis</h4>
+          <p>Identified key churn drivers and provided retention recommendations that reduced churn risk.</p>
+          <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Classification</li>
+          </ul>
+          <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Customer-Churning-Prediction" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Quick View
+          </a>
+        </div>
       </article>
 
       <article class="project-card">
-        <h4>Customer Behavior Analysis</h4>
-        <p>Analyzed customer purchasing and behavior patterns and preferences to inform business strategies.</p>
-        <ul>
-          <li>Excel</li>
-          <li>PowerBI</li>
-          <li>PostgreSQL</li>
-        </ul>
-        <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/customer_behavior_analysis" target="_blank" rel="noopener noreferrer">Quick View</a>
+        <div class="project-card-thumb" data-initial="B" aria-hidden="true"></div>
+        <div class="project-card-inner">
+          <h4>Customer Behavior Analysis</h4>
+          <p>Analyzed customer purchasing and behavior patterns and preferences to inform business strategies.</p>
+          <ul>
+            <li>Excel</li>
+            <li>PowerBI</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/customer_behavior_analysis" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Quick View
+          </a>
+        </div>
       </article>
 
       <article class="project-card">
-        <h4>Predicting Employee Attrition</h4>
-        <p>A binary classification project predicting whether an employee would leave a company over a period of time.</p>
-        <ul>
-          <li>Python</li>
-          <li>Jupyter Notebooks</li>
-          <li>Kaggle dataset</li>
-        </ul>
-        <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Predicting-Employee-Attrition/tree/main" target="_blank" rel="noopener noreferrer">Quick View</a>
+        <div class="project-card-thumb" data-initial="P" aria-hidden="true"></div>
+        <div class="project-card-inner">
+          <h4>Predicting Employee Attrition</h4>
+          <p>A binary classification project predicting whether an employee would leave a company over a period of time.</p>
+          <ul>
+            <li>Python</li>
+            <li>Jupyter Notebooks</li>
+            <li>Kaggle dataset</li>
+          </ul>
+          <a class="btn btn-outline details-btn" href="https://github.com/inn-ctrl/Predicting-Employee-Attrition/tree/main" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Quick View
+          </a>
+        </div>
       </article>
     </section>
 
