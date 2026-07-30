@@ -6,7 +6,7 @@
   <meta name="description" content="Innocent Byiringiro — Data and BI analyst portfolio: churn modeling, customer behavior analytics, and attrition prediction with Python, SQL, and Power BI.">
   <title>Innocent Byiringiro | Data &amp; BI Analyst</title>
   <meta property="og:title" content="Innocent Byiringiro | Data &amp; BI Analyst">
-  <meta property="og:description" content="Dashboarding, forecasting, and analytics storytelling. Featured projects in churn, customer behavior, and employee attrition.">
+  <meta property="og:description" content="Dashboarding, forecasting, and analytics storytelling. Featured projects in churn, customer behavior, employee attrition, and market intelligence.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <nav class="site-nav container" aria-label="Primary">
     <h1 class="logo">
       <a class="logo-link" href="#">Innocent Byiringiro<span>.</span></a>
@@ -24,7 +25,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="themeToggle" type="button" class="btn btn-small btn-ghost" aria-label="Toggle color theme">Theme</button>
+      <button id="themeToggle" type="button" class="btn btn-small btn-ghost" aria-label="Toggle color theme" aria-pressed="false">Theme</button>
     </div>
   </nav>
   <header class="hero">
@@ -41,7 +42,7 @@
         <h2 class="hero-title">Deriving insights from data.</h2>
         <p class="lead">
           I turn raw data into clear decisions: exploratory analysis, dashboards stakeholders use, and models that highlight risk and opportunity.
-          Below are three projects spanning classification, behavioral analytics, and reporting.
+          Below are four projects spanning classification, behavioral analytics, reporting, and market intelligence.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn">View projects</a>
@@ -53,7 +54,7 @@
 
   <hr class="section-divider" aria-hidden="true" />
 
-  <main>
+  <main id="main-content">
     <section class="about container" id="about" aria-labelledby="about-heading">
       <div class="about-card reveal reveal-rise">
         <h3 id="about-heading">About</h3>
@@ -79,12 +80,28 @@
     <div class="container">
       <section class="section-heading reveal reveal-rise" id="projects">
         <h3>Featured projects</h3>
-        <p>Each card links to the GitHub repository with code and documentation. Thumbnails are placeholders until live dashboard captures are added.</p>
+        <p>Each card highlights the problem, approach, and business outcome. Thumbnails are placeholders until live dashboard captures are added.</p>
       </section>
 
       <section class="project-grid">
         <article class="project-card reveal">
-          <div class="project-card-thumb project-card-thumb--churn" data-initial="01" role="img" aria-label="Project placeholder: Customer churn"></div>
+          <div class="project-card-thumb project-card-thumb--behavior" data-initial="01" role="img" aria-label="Project placeholder: Calgary market intelligence"></div>
+          <div class="project-card-inner">
+            <h4>CCIS IT Bridging Program: Calgary service market intelligence</h4>
+            <p class="project-outcome"><strong>Outcome:</strong> Built a portfolio-grade market intelligence workflow for Syntri Labs to support outreach, segmentation, and competitive positioning.</p>
+            <p>Problem → approach: collected and cleaned public business data for Calgary service industries, enriched digital signals, segmented outreach tiers, and packaged findings in a Power BI dashboard plus insights memo.</p>
+            <ul>
+              <li>Python</li>
+              <li>Power BI</li>
+              <li>API integration</li>
+              <li>Data enrichment</li>
+            </ul>
+            <a class="btn btn-outline details-btn" href="mailto:innocenthope160@email.com?subject=CCIS%20IT%20Bridging%20Program%20-%20Syntri%20Labs%20case%20study">Request case study</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-thumb project-card-thumb--churn" data-initial="02" role="img" aria-label="Project placeholder: Customer churn"></div>
           <div class="project-card-inner">
             <h4>Customer churn analysis</h4>
             <p class="project-outcome"><strong>Outcome:</strong> Ranked churn drivers with a classification baseline so retention could prioritize high-risk accounts.</p>
@@ -99,7 +116,7 @@
         </article>
 
         <article class="project-card reveal">
-          <div class="project-card-thumb project-card-thumb--behavior" data-initial="02" role="img" aria-label="Project placeholder: Customer behavior"></div>
+          <div class="project-card-thumb project-card-thumb--behavior" data-initial="03" role="img" aria-label="Project placeholder: Customer behavior"></div>
           <div class="project-card-inner">
             <h4>Customer behavior analysis</h4>
             <p class="project-outcome"><strong>Outcome:</strong> Summarized purchasing and preference patterns to support segmentation and campaign planning.</p>
@@ -114,7 +131,7 @@
         </article>
 
         <article class="project-card reveal">
-          <div class="project-card-thumb project-card-thumb--attrition" data-initial="03" role="img" aria-label="Project placeholder: Employee attrition"></div>
+          <div class="project-card-thumb project-card-thumb--attrition" data-initial="04" role="img" aria-label="Project placeholder: Employee attrition"></div>
           <div class="project-card-inner">
             <h4>Predicting employee attrition</h4>
             <p class="project-outcome"><strong>Outcome:</strong> Built a binary classifier on structured HR-style features to flag likely turnover for follow-up.</p>
@@ -129,6 +146,20 @@
         </article>
       </section>
 
+      <section class="reviews container" id="reviews" aria-labelledby="reviews-heading">
+        <div class="section-heading reveal reveal-rise">
+          <h3 id="reviews-heading">Recommendations</h3>
+          <p>Selected recommendations and reviews from collaborators and stakeholders.</p>
+        </div>
+
+        <section class="review-grid">
+          <article class="review-card reveal reveal-rise">
+            <blockquote class="review-quote">Innocent...questioned his own results instead of accepting them at face value...and was upfront, unprompted, about where his methodology was solid versus where it was still an approximation,</blockquote>
+            <p class="review-author">— Valeriia Hlukhova</p>
+          </article>
+        </section>
+      </section>
+
       <hr class="section-divider section-divider--spaced" aria-hidden="true" />
 
       <section class="contact reveal reveal-rise" id="contact" aria-labelledby="contact-heading">
@@ -140,7 +171,7 @@
           </div>
           <div class="contact-links">
             <a class="btn" href="mailto:innocenthope160@email.com">Email</a>
-            <a class="btn btn-outline btn-small" href="https://www.linkedin.com/in/innocent-byiringiro18/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-outline btn-small" href="https://www.linkedin.com/in/innocent-byiringiro18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a class="btn btn-outline btn-small" href="https://github.com/inn-ctrl" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
@@ -156,8 +187,13 @@
     </div>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-  <script src="script.js"></script>
+  <!-- Analytics placeholder (enable your provider):
+  <script>
+    // Insert Plausible / GA snippet here
+  </script>
+  -->
+  <script src="script.js" defer></script>
 </body>
 </html>

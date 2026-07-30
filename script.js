@@ -2,6 +2,24 @@ const detailsButtons = document.querySelectorAll(".details-btn");
 const toast = document.getElementById("toast");
 const themeToggle = document.getElementById("themeToggle");
 
+// Apply saved theme preference (light/dark)
+function applyThemeClass(isLight) {
+  document.body.classList.toggle("light", isLight);
+  themeToggle.setAttribute("aria-pressed", String(!!isLight));
+  themeToggle.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+}
+
+function loadStoredTheme() {
+  try {
+    const stored = localStorage.getItem("theme");
+    if (stored === "light") {
+      applyThemeClass(true);
+    }
+  } catch (e) {
+    // ignore storage errors
+  }
+}
+
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add("show");
@@ -47,8 +65,32 @@ function initScrollReveal() {
 
 initScrollReveal();
 
+// Make project cards keyboard-accessible: Enter/Space activates first details link
+function makeCardsKeyboardAccessible() {
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach((card) => {
+    if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '0');
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const link = card.querySelector('.details-btn');
+        if (link) link.click();
+      }
+    });
+  });
+}
+
+makeCardsKeyboardAccessible();
+
+loadStoredTheme();
+
 themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  const isLight = document.body.classList.contains("light");
+  const isLight = !document.body.classList.contains("light");
+  applyThemeClass(isLight);
+  try {
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  } catch (e) {
+    // ignore storage errors
+  }
   showToast(isLight ? "Light theme on" : "Dark theme on");
 });
